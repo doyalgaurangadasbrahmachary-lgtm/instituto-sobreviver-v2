@@ -9,31 +9,41 @@ import { Heart, ChevronLeft, ChevronRight, X } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
-const CDN_GALLERY = 'https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/galeria.webp';
+const CDN_BASE = 'https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/';
+
+const imagesList = [
+    'arabescko--4197.webp', 'arabescko--4271.webp', 'arabescko--4449.webp', 'arabescko--4455.webp',
+    'arabescko--4475.webp', 'arabescko--4477.webp', 'arabescko--4485.webp', 'arabescko--4495.webp',
+    'arabescko--4497.webp', 'arabescko--4513.webp', 'arabescko--4525.webp', 'arabescko--4547.webp',
+    'img_1298.webp', 'img_1299.webp', 'img_9136.webp', 'galeria.webp'
+];
+
+// Helper para distribuir las imágenes disponibles cíclicamente
+const getImg = (index: number) => `${CDN_BASE}${imagesList[index % imagesList.length]}`;
 
 const galleryImages = [
-    { id: 1, src: CDN_GALLERY, alt: 'Momento de Conexão', quote: "Transformamos a dor em um laço inquebrável de amor e cuidado especializado." },
-    { id: 2, src: CDN_GALLERY, alt: 'Cuidado Humanizado', quote: "Onde o sistema se cala, nossa voz ecoa com força por dignidade e respeito." },
-    { id: 3, src: CDN_GALLERY, alt: 'Presença e Amor', quote: "Cada história carrega uma essência que merece ser honrada até o último suspiro." },
-    { id: 4, src: CDN_GALLERY, alt: 'Comunidade Solidária', quote: "Somos a ponte sólida entre o isolamento do abandono e o calor do acolhimento." },
-    { id: 5, src: CDN_GALLERY, alt: 'Esperança Viva', quote: "Nossa missão é garantir que ninguém enfrente a despedida em silêncio ou solidão." },
-    { id: 6, src: CDN_GALLERY, alt: 'Apoio Integral', quote: "Justiça, para nós, é assegurar que o direito à vida inclua o direito ao conforto absoluto." },
-    { id: 7, src: CDN_GALLERY, alt: 'Olhares que Curam', quote: "A força da nossa comunidade é o remédio mais eficaz contra o descaso público." },
-    { id: 8, src: CDN_GALLERY, alt: 'Juntos é Melhor', quote: "Resgatamos a luz da esperança naqueles que o mundo decidiu deixar nas sombras." },
-    { id: 9, src: CDN_GALLERY, alt: 'Calor Humano', quote: "O cuidado paliativo não é sobre a espera, é sobre viver cada instante com valor humano." },
-    { id: 10, src: CDN_GALLERY, alt: 'Sorrisos Recuperados', quote: "Sua mão estendida é o escudo necessário contra a burocracia que fere a alma." },
-    { id: 11, src: CDN_GALLERY, alt: 'Atenção com Amor', quote: "A dignidade não deve ser um privilégio, mas o alicerce de toda existência humana." },
-    { id: 12, src: CDN_GALLERY, alt: 'Vida Digna', quote: "Criamos um refúgio de paz em meio à tempestade da doença e da incerteza." },
-    { id: 13, src: CDN_GALLERY, alt: 'Momentos Especiais', quote: "Temos a coragem de lutar incansavelmente por quem não pode mais caminhar sozinho." },
-    { id: 14, src: CDN_GALLERY, alt: 'Compartilhando Alegria', quote: "Transformamos o luto em uma luta justa, e a ausência em uma presença transformadora." },
-    { id: 15, src: CDN_GALLERY, alt: 'União e Força', quote: "Onde falta a estrutura do Estado, sobra a humanidade e a dedicação da nossa rede." },
-    { id: 16, src: CDN_GALLERY, alt: 'Dia a Dia', quote: "Protegemos a fragilidade da vida com a força inabalável do nosso compromisso social." },
-    { id: 17, src: CDN_GALLERY, alt: 'Nosso Instituto', quote: "Cada gesto de apoio é uma semente de alívio plantada no coração de uma família." },
-    { id: 18, src: CDN_GALLERY, alt: 'Equipe Comprometida', quote: "Lutamos para que o alívio da dor chegue antes de qualquer barreira ou demora estatal." },
-    { id: 19, src: CDN_GALLERY, alt: 'Espaço de Luz', quote: "Somos a prova viva de que a empatia verdadeira pode vencer qualquer forma de isolamento." },
-    { id: 20, src: CDN_GALLERY, alt: 'Impacto Real', quote: "Honramos o passado, cuidamos do presente e semeamos uma nova esperança para o futuro." },
-    { id: 21, src: CDN_GALLERY, alt: 'Histórias Reais', quote: "A justiça que buscamos incansavelmente é aquela que traz o medicamento e o abraço." },
-    { id: 22, src: CDN_GALLERY, alt: 'Laura Animada', quote: "Ninguém fica para trás quando decidimos, como comunidade, caminhar de mãos dadas." },
+    { id: 1, src: getImg(0), alt: 'Momento de Conexão', quote: "Transformamos a dor em um laço inquebrável de amor e cuidado especializado." },
+    { id: 2, src: getImg(1), alt: 'Cuidado Humanizado', quote: "Onde o sistema se cala, nossa voz ecoa com força por dignidade e respeito." },
+    { id: 3, src: getImg(2), alt: 'Presença e Amor', quote: "Cada história carrega uma essência que merece ser honrada até o último suspiro." },
+    { id: 4, src: getImg(3), alt: 'Comunidade Solidária', quote: "Somos a ponte sólida entre o isolamento do abandono e o calor do acolhimento." },
+    { id: 5, src: getImg(4), alt: 'Esperança Viva', quote: "Nossa missão é garantir que ninguém enfrente a despedida em silêncio ou solidão." },
+    { id: 6, src: getImg(5), alt: 'Apoio Integral', quote: "Justiça, para nós, é assegurar que o direito à vida inclua o direito ao conforto absoluto." },
+    { id: 7, src: getImg(6), alt: 'Olhares que Curam', quote: "A força da nossa comunidade é o remédio mais eficaz contra o descaso público." },
+    { id: 8, src: getImg(7), alt: 'Juntos é Melhor', quote: "Resgatamos a luz da esperança naqueles que o mundo decidiu deixar nas sombras." },
+    { id: 9, src: getImg(8), alt: 'Calor Humano', quote: "O cuidado paliativo não é sobre a espera, é sobre viver cada instante com valor humano." },
+    { id: 10, src: getImg(9), alt: 'Sorrisos Recuperados', quote: "Sua mão estendida é o escudo necessário contra a burocracia que fere a alma." },
+    { id: 11, src: getImg(10), alt: 'Atenção com Amor', quote: "A dignidade não deve ser um privilégio, mas o alicerce de toda existência humana." },
+    { id: 12, src: getImg(11), alt: 'Vida Digna', quote: "Criamos um refúgio de paz em meio à tempestade da doença e da incerteza." },
+    { id: 13, src: getImg(12), alt: 'Momentos Especiais', quote: "Temos a coragem de lutar incansavelmente por quem não pode mais caminhar sozinho." },
+    { id: 14, src: getImg(13), alt: 'Compartilhando Alegria', quote: "Transformamos o luto em uma luta justa, e a ausência em uma presença transformadora." },
+    { id: 15, src: getImg(14), alt: 'União e Força', quote: "Onde falta a estrutura do Estado, sobra a humanidade e a dedicação da nossa rede." },
+    { id: 16, src: getImg(15), alt: 'Dia a Dia', quote: "Protegemos a fragilidade da vida com a força inabalável do nosso compromisso social." },
+    { id: 17, src: getImg(0), alt: 'Nosso Instituto', quote: "Cada gesto de apoio é uma semente de alívio plantada no coração de uma família." },
+    { id: 18, src: getImg(1), alt: 'Equipe Comprometida', quote: "Lutamos para que o alívio da dor chegue antes de qualquer barreira ou demora estatal." },
+    { id: 19, src: getImg(2), alt: 'Espaço de Luz', quote: "Somos a prova viva de que a empatia verdadeira pode vencer qualquer forma de isolamento." },
+    { id: 20, src: getImg(3), alt: 'Impacto Real', quote: "Honramos o passado, cuidamos do presente e semeamos uma nova esperança para o futuro." },
+    { id: 21, src: getImg(4), alt: 'Histórias Reais', quote: "A justiça que buscamos incansavelmente é aquela que traz o medicamento e o abraço." },
+    { id: 22, src: getImg(5), alt: 'Laura Animada', quote: "Ninguém fica para trás quando decidimos, como comunidade, caminhar de mãos dadas." },
 ];
 
 const HumanImpactGallery: React.FC = () => {
