@@ -71,20 +71,26 @@ const HumanImpactGallery: React.FC = () => {
     useGSAP(() => {
         if (!galleryRef.current) return;
 
-        // Staggered Fade-in Animation for images - SMOOTHED for V12
+        // 1. Y-Sort: Obtener elementos y ordenarlos por su posición real vertical (ignorando las columnas DOM)
+        const elements = gsap.utils.toArray(galleryRef.current.children) as HTMLElement[];
+        elements.sort((a, b) => {
+            return a.getBoundingClientRect().top - b.getBoundingClientRect().top;
+        });
+
+        // 2. Animación Cascada GSAP 
         gsap.fromTo(
-            galleryRef.current.children, // Targetting image wrappers
+            elements, // Pasamos el array matemáticamente ordenado
             { y: 40, opacity: 0, scale: 0.95 },
             {
                 y: 0,
                 opacity: 1,
                 scale: 1,
-                duration: 1.2, // Increased from 0.8s
-                stagger: 0.2, // Slightly increased for more rhythmic entry
-                ease: 'expo.out', // More premium feeling ease
+                duration: 1.2,
+                stagger: 0.15, // Cascada fluida
+                ease: 'expo.out',
                 scrollTrigger: {
                     trigger: containerRef.current,
-                    start: 'top 85%', // Earlier start for smoother lead-in
+                    start: 'top 95%', // 3. Early Trigger: Arranca ligeramente antes de verse
                     toggleActions: 'play none none reverse',
                 },
             }
