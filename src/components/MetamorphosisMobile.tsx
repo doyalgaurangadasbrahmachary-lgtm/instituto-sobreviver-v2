@@ -153,10 +153,6 @@ const MobileScrollBlock = ({
                 className="absolute bottom-[10%] left-[6%] w-[88%] z-20 pointer-events-auto"
                 style={{ opacity: textOpacity, y: locked ? 0 : textY }}
             >
-                <h3 className="font-display text-6xl mb-4 tracking-tighter leading-none drop-shadow-[0_5px_15px_rgba(0,0,0,0.7)]">
-                    <TitleSplit text={title} baseColor={titleColor} />
-                </h3>
-
                 {showReportButton && (
                     <button
                         onClick={openReport}
@@ -172,6 +168,10 @@ const MobileScrollBlock = ({
                         <ExternalLink className="w-3 h-3 text-brand-cyan/50 group-hover:text-brand-cyan transition-colors" />
                     </button>
                 )}
+
+                <h3 className="font-display text-6xl mb-4 tracking-tighter leading-none drop-shadow-[0_5px_15px_rgba(0,0,0,0.7)]">
+                    <TitleSplit text={title} baseColor={titleColor} />
+                </h3>
 
                 <div className={`${cardBg} backdrop-blur-md p-5 rounded-2xl border border-white/10 shadow-2xl`}>
                     <p className={`font-body text-base leading-relaxed tracking-normal text-left text-white/90 border-l-4 ${borderColor}/50 pl-5`}>
