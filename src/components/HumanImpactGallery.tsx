@@ -34,12 +34,12 @@ const galleryImages = [
     { id: 14, src: getImg(13), alt: 'Compartilhando Alegria', quote: "Transformamos o luto em uma luta justa, e a ausência em uma presença transformadora." },
     { id: 15, src: getImg(14), alt: 'União e Força', quote: "Onde falta a estrutura do Estado, sobra a humanidade e a dedicação da nossa rede." },
     { id: 16, src: getImg(15), alt: 'Dia a Dia', quote: "Protegemos a fragilidade da vida com a força inabalável do nosso compromisso social." },
-    { id: 17, src: getImg(0), alt: 'Nosso Instituto', quote: "Cada gesto de apoio é uma semente de alívio plantada no coração de uma família." },
-    { id: 18, src: getImg(1), alt: 'Equipe Comprometida', quote: "Lutamos para que o alívio da dor chegue antes de qualquer barreira ou demora estatal." },
-    { id: 19, src: getImg(2), alt: 'Espaço de Luz', quote: "Somos a prova viva de que a empatia verdadeira pode vencer qualquer forma de isolamento." },
-    { id: 20, src: getImg(3), alt: 'Impacto Real', quote: "Honramos o passado, cuidamos do presente e semeamos uma nova esperança para o futuro." },
-    { id: 21, src: getImg(4), alt: 'Histórias Reais', quote: "A justiça que buscamos incansavelmente é aquela que traz o medicamento e o abraço." },
-    { id: 22, src: getImg(5), alt: 'Laura Animada', quote: "Ninguém fica para trás quando decidimos, como comunidade, caminhar de mãos dadas." },
+    { id: 17, src: getImg(16), alt: 'Nosso Instituto', quote: "Cada gesto de apoio é uma semente de alívio plantada no coração de uma família." },
+    { id: 18, src: getImg(17), alt: 'Equipe Comprometida', quote: "Lutamos para que o alívio da dor chegue antes de qualquer barreira ou demora estatal." },
+    { id: 19, src: getImg(18), alt: 'Espaço de Luz', quote: "Somos a prova viva de que a empatia verdadeira pode vencer qualquer forma de isolamento." },
+    { id: 20, src: getImg(19), alt: 'Impacto Real', quote: "Honramos o passado, cuidamos do presente e semeamos uma nova esperança para o futuro." },
+    { id: 21, src: getImg(20), alt: 'Histórias Reais', quote: "A justiça que buscamos incansavelmente é aquela que traz o medicamento e o abraço." },
+    { id: 22, src: getImg(21), alt: 'Laura Animada', quote: "Ninguém fica para trás quando decidimos, como comunidade, caminhar de mãos dadas." },
 ];
 
 const HumanImpactGallery: React.FC = () => {
