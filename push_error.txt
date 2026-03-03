@@ -1,0 +1,229 @@
+﻿git : remote: error: 
+GH013: Repository rule 
+violations found for 
+refs/heads/main.       
+ 
+At line:1 char:1
++ git push origin main 
+2>&1 | Out-File 
+push_error.txt 
+-Encoding utf8
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (remote: error   
+ : ...s/main.          
+  :String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+remote: 
+remote: - GITHUB PUSH 
+PROTECTION        
+remote:   ÔÇöÔÇöÔÇöÔÇöÔ
+ÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔÇö
+ÔÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔÇ
+öÔÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔ
+ÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔÇö
+ÔÇöÔÇöÔÇöÔÇöÔÇöÔÇö     
+   
+remote:     Resolve 
+the following 
+violations before 
+pushing again        
+remote: 
+remote:     - Push 
+cannot contain secrets 
+       
+remote: 
+remote:             
+remote:      (?) Learn 
+how to resolve a 
+blocked push        
+remote:      https://do
+cs.github.com/code-secu
+rity/secret-scanning/wo
+rking-with-secret-scann
+ing-and-push-protection
+/working-with-push-prot
+ection-from-the-command
+-line#resolving-a-block
+ed-push        
+remote:             
+remote:             
+remote:       ÔÇöÔÇö 
+GitHub Personal Access 
+Token ÔÇöÔÇöÔÇöÔÇöÔÇöÔÇ
+öÔÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔ
+ÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔÇö
+ÔÇö        
+remote:        
+locations:        
+remote:          - 
+commit: ff284607febfeb4
+9850b43c077758e7da3fa48
+db        
+remote:            
+path: credenciales/mcp_
+config_maestro.json:10 
+       
+remote:             
+remote:        (?) To 
+push, remove secret 
+from commit(s) or 
+follow this URL to 
+allow the secret.      
+  
+remote:        https://
+github.com/doyalgaurang
+adasbrahmachary-lgtm/in
+stituto-sobreviver-core
+/security/secret-scanni
+ng/unblock-secret/3ARsl
+ecUKUhtgxgRn7HHhkW7Rg4 
+       
+remote:             
+remote:             
+remote:       ÔÇöÔÇö 
+Supabase Secret Key ÔÇö
+ÔÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔÇ
+öÔÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔ
+ÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔÇö
+ÔÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔÇö  
+      
+remote:        
+locations:        
+remote:          - 
+commit: ff284607febfeb4
+9850b43c077758e7da3fa48
+db        
+remote:            
+path: credenciales/cred
+enciales_rest.env:23   
+     
+remote:          - 
+commit: ff284607febfeb4
+9850b43c077758e7da3fa48
+db        
+remote:            
+path: credenciales/mcp_
+config_maestro.json:21 
+       
+remote:          - 
+commit: ff284607febfeb4
+9850b43c077758e7da3fa48
+db        
+remote:            
+path: 
+uploadImages.mjs:5     
+   
+remote:             
+remote:        (?) To 
+push, remove secret 
+from commit(s) or 
+follow this URL to 
+allow the secret.      
+  
+remote:        https://
+github.com/doyalgaurang
+adasbrahmachary-lgtm/in
+stituto-sobreviver-core
+/security/secret-scanni
+ng/unblock-secret/3ARsl
+ccSDMm7k6dQtqaCOcxBYhx 
+       
+remote:             
+remote:             
+remote:       ÔÇöÔÇö 
+Figma Personal Access 
+Token ÔÇöÔÇöÔÇöÔÇöÔÇöÔÇ
+öÔÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔ
+ÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔÇö
+ÔÇöÔÇö        
+remote:        
+locations:        
+remote:          - 
+commit: ff284607febfeb4
+9850b43c077758e7da3fa48
+db        
+remote:            
+path: credenciales/cred
+enciales_rest.env:30   
+     
+remote:          - 
+commit: ff284607febfeb4
+9850b43c077758e7da3fa48
+db        
+remote:            
+path: credenciales/mcp_
+config_maestro.json:31 
+       
+remote:             
+remote:        (?) To 
+push, remove secret 
+from commit(s) or 
+follow this URL to 
+allow the secret.      
+  
+remote:        https://
+github.com/doyalgaurang
+adasbrahmachary-lgtm/in
+stituto-sobreviver-core
+/security/secret-scanni
+ng/unblock-secret/3ARsl
+cwGB7wJEFk3uka0vj356L8 
+       
+remote:             
+remote:             
+remote:       ÔÇöÔÇö 
+Vercel Personal Access 
+Token ÔÇöÔÇöÔÇöÔÇöÔÇöÔÇ
+öÔÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔ
+ÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔÇöÔÇö
+ÔÇö        
+remote:        
+locations:        
+remote:          - 
+commit: ff284607febfeb4
+9850b43c077758e7da3fa48
+db        
+remote:            
+path: credenciales/mcp_
+config_maestro.json:42 
+       
+remote:             
+remote:        (?) To 
+push, remove secret 
+from commit(s) or 
+follow this URL to 
+allow the secret.      
+  
+remote:        https://
+github.com/doyalgaurang
+adasbrahmachary-lgtm/in
+stituto-sobreviver-core
+/security/secret-scanni
+ng/unblock-secret/3ARsl
+fRPx9Mgv1CP3wj0x51ixA1 
+       
+remote:             
+remote: 
+remote: 
+To https://github.com/d
+oyalgaurangadasbrahmach
+ary-lgtm/instituto-sobr
+eviver-core.git
+ ! [remote rejected] 
+main -> main (push 
+declined due to 
+repository rule 
+violations)
+error: failed to push 
+some refs to 'https://g
+ithub.com/doyalgauranga
+dasbrahmachary-lgtm/ins
+tituto-sobreviver-core.
+git'

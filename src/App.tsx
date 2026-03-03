@@ -1,0 +1,76 @@
+// @ts-expect-error — Activity is a React 19 experimental API (exists at runtime, not in TS defs)
+import { Activity } from 'react';
+import { useEffect } from 'react';
+import RealityMetamorphosis from './components/RealityMetamorphosis';
+import Programs from './components/Programs';
+import HumanImpactGallery from './components/HumanImpactGallery';
+import './styles/theme.css';
+
+import { ViewProvider, useView } from './context/ViewContext';
+import ImperativoDignidade from './components/imperativo/ImperativoDignidade';
+import Hero from './components/Hero';
+import DonationPillHeader from './components/ui/DonationPillHeader';
+
+// Home Components (converted from Next.js)
+import HomeHeader from './components/home/HomeHeader';
+import HomeHero from './components/home/HomeHero';
+import HomeBentoGrid from './components/home/HomeBentoGrid';
+import HomeServices from './components/home/HomeServices';
+import HomeFooter from './components/home/HomeFooter';
+
+const AppContent = () => {
+    const { view, setView, isReportOpen, closeReport } = useView();
+
+    // Scroll reset on every view change
+    useEffect(() => {
+        // Only reset scroll when switching MAIN views (home <-> donation)
+        // Report overlay does not trigger this.
+        window.scrollTo({ top: 0, behavior: 'instant' });
+    }, [view]);
+
+    return (
+        <main className="bg-brand-cream text-brand-navy min-h-screen relative">
+            {/* === VISTA HOME: display:none cuando no está activa === */}
+            <Activity mode={view === 'home' ? 'visible' : 'hidden'}>
+                <div className="font-outfit">
+                    <HomeHeader />
+                    <HomeHero />
+                    <HomeBentoGrid />
+                    <HomeServices />
+                </div>
+
+                <div className="font-outfit">
+                    <HomeFooter />
+                </div>
+            </Activity>
+
+            {/* === VISTA DONATION: 100% viewport, portal completo === */}
+            <Activity mode={view === 'donation' ? 'visible' : 'hidden'}>
+                {/* Pill navigation header — replaces old floating back arrow */}
+                <DonationPillHeader onBack={() => setView('home')} />
+                {/* Section id wrappers for instant anchor navigation */}
+                <div id="hero-donation"><Hero /></div>
+                <div id="reality-metamorphosis"><RealityMetamorphosis /></div>
+                <div id="programs"><Programs /></div>
+                <div id="gallery"><HumanImpactGallery /></div>
+            </Activity>
+
+            {/* === REPORT OVERLAY: Rendered on top, preserving underlying scroll === */}
+            {isReportOpen && (
+                <div className="fixed inset-0 z-[200] overflow-y-auto bg-brand-cream animate-in fade-in duration-300">
+                    <ImperativoDignidade onBack={closeReport} />
+                </div>
+            )}
+        </main>
+    );
+};
+
+function App() {
+    return (
+        <ViewProvider>
+            <AppContent />
+        </ViewProvider>
+    )
+}
+
+export default App
