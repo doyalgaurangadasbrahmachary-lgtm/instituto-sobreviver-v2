@@ -15,28 +15,30 @@ import { FileText, ExternalLink } from 'lucide-react';
 import DonationButton from './ui/DonationButton';
 
 // --- Sections (mobile assets) ---
+const ASSETS_URL = 'https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets';
+
 const SECTIONS = [
     {
         id: 'fisica',
         title: 'Física',
-        imgBN: '/assets/brand/donation/metamorfosis-movil/hospital.png',
-        imgColor: '/assets/brand/donation/metamorfosis-movil/1.2.png',
+        imgBN: `${ASSETS_URL}/meta-movil-1-bn.webp`,
+        imgColor: `${ASSETS_URL}/meta-movil-1-color.webp`,
         criticalText: "Em Divinópolis, as mortes por câncer cresceram 54% na última década. O sistema ignora a dor de quem não pode esperar.",
         hopeText: "O Instituto oferece alívio integral. Com Ozonioterapia e terapias especializadas, garantimos que a dignidade vença a dor física."
     },
     {
         id: 'social',
         title: 'Social',
-        imgBN: '/assets/brand/donation/metamorfosis-movil/2.1.png',
-        imgColor: '/assets/brand/donation/metamorfosis-movil/familia.png',
+        imgBN: `${ASSETS_URL}/meta-movil-2-bn.webp`,
+        imgColor: `${ASSETS_URL}/meta-movil-2-color.webp`,
         criticalText: "Minas Gerais possui apenas 71 leitos paliativos para 21 milhões de pessoas. O abandono institucional é a regra nos desertos assistenciais.",
         hopeText: "Somos uma Comunidade Paliativista. Mais de 370 pessoas já foram resgatadas do isolamento para um ambiente de amor e presença ativa."
     },
     {
         id: 'juridica',
         title: 'Jurídica',
-        imgBN: '/assets/brand/donation/metamorfosis-movil/3.1.png',
-        imgColor: '/assets/brand/donation/metamorfosis-movil/3.2.png',
+        imgBN: `${ASSETS_URL}/meta-movil-3-bn.webp`,
+        imgColor: `${ASSETS_URL}/meta-movil-3-color.webp`,
         criticalText: "A burocracia e o descaso bloqueiam o acesso a remédios vitais. Pacientes terminais são tratados como números em processos lentos.",
         hopeText: "Justiça que cura. Já asseguramos R$ 384.000 em bloqueios judiciais para garantir medicamentos de alto custo e dignidade."
     }
@@ -119,8 +121,8 @@ const MobileScrollBlock = ({
                     src={imgSrc}
                     alt={imgAlt}
                     className={`absolute inset-0 w-full h-full object-cover will-change-transform ${isGrayscale
-                            ? 'filter grayscale brightness-[1.15] contrast-[1.05]'
-                            : 'brightness-110 saturate-110'
+                        ? 'filter grayscale brightness-[1.15] contrast-[1.05]'
+                        : 'brightness-110 saturate-110'
                         }`}
                     style={{ scale: imgScale, y: imgY }}
                     loading="lazy"
