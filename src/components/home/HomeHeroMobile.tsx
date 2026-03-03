@@ -3,10 +3,12 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import HomeQuemSomosModal from './HomeQuemSomosModal';
+import { useView } from '../../context/ViewContext';
 
 export default function HomeHeroMobile() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isLogoLoaded, setIsLogoLoaded] = useState(false);
+    const { setView } = useView();
 
     // Ancla de Sincronía universal
     const globalProgress = useRef(0);
@@ -85,23 +87,31 @@ export default function HomeHeroMobile() {
                     />
                 </div>
 
-                {/* TEXT & CTA (Posición Ajustada: 51% para evitar solapamiento) */}
-                <div ref={uiContentRef} className="absolute left-1/2 -translate-x-1/2 w-full px-6 flex flex-col items-center text-center" style={{ top: '51%', transform: 'translateY(-50%)' }}>
+                {/* TEXT & CTA (Posición Ajustada: 55% para evitar solapamiento vertical debido a los dos botones) */}
+                <div ref={uiContentRef} className="absolute left-1/2 -translate-x-1/2 w-full px-6 flex flex-col items-center text-center" style={{ top: '55%', transform: 'translateY(-50%)' }}>
                     <h1 className="text-4xl font-bold text-azure-deep mb-4 drop-shadow-sm leading-tight pointer-events-auto">
                         Instituto <br />
                         Sobre&apos;Viver
                     </h1>
-                    <p className="text-lg text-azure-deep/80 mb-8 leading-relaxed font-light drop-shadow-sm max-w-sm pointer-events-auto">
+                    <p className="text-lg text-azure-deep/80 mb-6 leading-relaxed font-light drop-shadow-sm max-w-sm pointer-events-auto">
                         &quot;Para quem tem fé, a vida nunca acaba.&quot; <br />
                         Cuidamos de pessoas que enfrentam doenças graves, oferecendo cuidados paliativos com respeto e acolhimento.
                     </p>
 
-                    <button
-                        onClick={() => setIsModalOpen(true)}
-                        className="px-8 py-3 bg-azure-vibrant text-bone rounded-full font-bold text-lg hover:bg-azure-deep hover:text-white transition-all transform hover:scale-105 shadow-lg text-center cursor-pointer select-none touch-manipulation pointer-events-auto"
-                    >
-                        Nossa História
-                    </button>
+                    <div className="flex flex-col gap-3 w-full max-w-[280px]">
+                        <button
+                            onClick={() => setIsModalOpen(true)}
+                            className="w-full py-2.5 bg-azure-vibrant text-bone rounded-full font-bold text-base hover:bg-azure-deep hover:text-white transition-all shadow-md text-center cursor-pointer select-none touch-manipulation pointer-events-auto"
+                        >
+                            Nossa História
+                        </button>
+                        <button
+                            onClick={() => setView('donation')}
+                            className="w-full py-2.5 bg-transparent border-2 border-azure-vibrant text-azure-vibrant rounded-full font-bold text-base hover:bg-azure-vibrant hover:text-bone transition-all shadow-md text-center cursor-pointer select-none touch-manipulation pointer-events-auto"
+                        >
+                            Conheça Nossa Luta
+                        </button>
+                    </div>
                 </div>
 
             </div>

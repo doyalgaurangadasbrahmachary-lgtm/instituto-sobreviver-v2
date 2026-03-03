@@ -190,12 +190,12 @@ export default function HomeHeader() {
                         Fale Conosco
                     </motion.a>
 
-                    {/* PRIMARY: Donation Button — CONNECTED via Smart Component */}
+                    {/* PRIMARY: Donation Button — CONNECTED via Smart Component to Mercado Pago */}
                     <motion.div
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        <SmartDonationButton enableTooltip={false} className="text-sm" />
+                        <SmartDonationButton enableTooltip={false} className="text-sm" onDonate={() => window.open('https://link.mercadopago.com.br/sobreviver', '_blank', 'noopener,noreferrer')} />
                     </motion.div>
                 </div>
             </div>

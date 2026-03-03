@@ -48,7 +48,7 @@ export default function HomeFooter() {
                         </motion.h2>
 
                         {/* Donation Button Component */}
-                        <SmartDonationButton id="btn-home-doa" enableTooltip={false} />
+                        <SmartDonationButton id="btn-home-doa" enableTooltip={false} onDonate={() => window.open('https://link.mercadopago.com.br/sobreviver', '_blank', 'noopener,noreferrer')} />
                     </div>
 
                     {/* RIGHT: Fale Conosco + Social Links */}

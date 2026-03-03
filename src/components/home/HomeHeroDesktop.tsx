@@ -2,9 +2,11 @@ import { useRef, useState } from 'react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import HomeQuemSomosModal from './HomeQuemSomosModal';
+import { useView } from '../../context/ViewContext';
 
 export default function HomeHeroDesktop() {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const { setView } = useView();
 
     // Refs
     const container = useRef<HTMLDivElement>(null);
@@ -110,12 +112,20 @@ export default function HomeHeroDesktop() {
                         Cuidamos de pessoas que enfrentam doenças graves, progressivas e sem possibilidade de cura, oferecendo cuidados paliativos com respeito, dignidade e acolhimento.
                     </p>
 
-                    <button
-                        onClick={() => setIsModalOpen(true)}
-                        className="px-8 py-3 bg-azure-vibrant text-bone rounded-full font-bold text-lg hover:bg-azure-deep hover:text-white transition-all transform hover:scale-105 shadow-lg text-center cursor-pointer"
-                    >
-                        Nossa história
-                    </button>
+                    <div className="flex flex-row gap-4">
+                        <button
+                            onClick={() => setIsModalOpen(true)}
+                            className="px-8 py-3 bg-azure-vibrant text-bone rounded-full font-bold text-lg hover:bg-azure-deep hover:text-white transition-all transform hover:scale-105 shadow-lg text-center cursor-pointer"
+                        >
+                            Nossa história
+                        </button>
+                        <button
+                            onClick={() => setView('donation')}
+                            className="px-8 py-3 bg-transparent border-2 border-azure-vibrant text-azure-vibrant rounded-full font-bold text-lg hover:bg-azure-vibrant hover:text-bone transition-all transform hover:scale-105 shadow-lg text-center cursor-pointer"
+                        >
+                            Conheça Nossa Luta
+                        </button>
+                    </div>
                 </div>
 
                 {/* 4. LOGO (The Star) */}
