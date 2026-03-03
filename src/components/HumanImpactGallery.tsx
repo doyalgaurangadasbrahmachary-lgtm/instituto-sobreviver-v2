@@ -154,7 +154,9 @@ const HumanImpactGallery: React.FC = () => {
                             src={img.src}
                             alt={img.alt}
                             className="w-full h-auto object-cover transition-all duration-500 group-hover:brightness-110 group-hover:saturate-[0.8]"
-                            loading="lazy"
+                            loading="eager"
+                            fetchPriority="low"
+                            decoding="async"
                         />
 
                         {/* Hover Overlay */}
