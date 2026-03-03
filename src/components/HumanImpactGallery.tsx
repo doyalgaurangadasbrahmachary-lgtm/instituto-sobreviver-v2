@@ -15,7 +15,8 @@ const imagesList = [
     'arabescko--4197.webp', 'arabescko--4271.webp', 'arabescko--4449.webp', 'arabescko--4455.webp',
     'arabescko--4475.webp', 'arabescko--4477.webp', 'arabescko--4485.webp', 'arabescko--4495.webp',
     'arabescko--4497.webp', 'arabescko--4513.webp', 'arabescko--4525.webp', 'arabescko--4547.webp',
-    'img_1298.webp', 'img_1299.webp', 'img_9136.webp', 'galeria.webp'
+    'img_1298.webp', 'img_1299.webp', 'img_9136.webp', 'galeria.webp',
+    'galerialau.webp', 'lauraanimada.webp'
 ];
 
 // Helper para distribuir las imágenes disponibles cíclicamente
