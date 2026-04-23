@@ -52,7 +52,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeSection, onBack }) => {
 
       <div className="mt-auto pt-8 border-t border-white/10 flex-shrink-0 flex flex-col gap-6">
         <img
-          src="https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/rostro-logo.webp"
+          src="/images/rostro-logo.webp"
           alt="Rostro Logo"
           className="w-24 opacity-20 hover:opacity-100 transition-opacity duration-500"
         />

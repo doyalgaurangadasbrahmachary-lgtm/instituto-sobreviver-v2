@@ -96,14 +96,14 @@ export default function HomeBentoGrid() {
     const items = [
         {
             id: 1,
-            image: "https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/seccion2-1.webp",
+            image: "/images/seccion2-1.webp",
             title: "IMPACTO SOCIAL SUPERIOR R$145 MIL COM SERVIÇOS PALIATIVOS",
             subtitle: "21 Pacientes ativos mensalmente",
             description: "Recebendo cuidados integrais e atenção multidisciplinar personalizada.",
         },
         {
             id: 2,
-            image: "https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/seccion2-2.webp",
+            image: "/images/seccion2-2.webp",
             title: "BLOQUEIO JUDICIAL DE R$384 MIL PARA TRATAMENTOS DE PACIENTES TERMINAIS",
             subtitle: "370+ pessoas atendidas",
             description: "Nos últimos dois anos, oferecendo suporte contínuo e humano.",

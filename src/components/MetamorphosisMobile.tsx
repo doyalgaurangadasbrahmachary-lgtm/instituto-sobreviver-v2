@@ -15,7 +15,7 @@ import { FileText, ExternalLink } from 'lucide-react';
 import DonationButton from './ui/DonationButton';
 
 // --- Sections (mobile assets) ---
-const ASSETS_URL = 'https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets';
+const ASSETS_URL = '/images';
 
 const SECTIONS = [
     {

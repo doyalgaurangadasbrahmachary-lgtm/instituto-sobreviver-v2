@@ -120,11 +120,11 @@ const Hero: React.FC = () => {
             {/* Background */}
             <div className="absolute inset-0 z-0">
                 <picture>
-                    <source media="(max-width: 767px)" srcSet="https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/donacionhero.webp" />
-                    <source media="(min-width: 768px)" srcSet="https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/hero-setion.webp" />
+                    <source media="(max-width: 767px)" srcSet="/images/donacionhero.webp" />
+                    <source media="(min-width: 768px)" srcSet="/images/hero-setion.webp" />
                     <img
                         ref={bgRef}
-                        src="https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/hero-setion.webp" // Fallback fallback PC
+                        src="/images/hero-setion.webp" // Fallback fallback PC
                         alt="Background Muro Verde"
                         fetchPriority="high"
                         loading="eager"
@@ -143,7 +143,7 @@ const Hero: React.FC = () => {
                 <div className="absolute left-1/2 top-1/4 transform -translate-x-1/2 -translate-y-1/2 md:left-auto md:right-6 md:top-1/2 md:translate-x-0 md:-translate-y-1/2 pointer-events-auto z-[100]">
                     <img
                         ref={logoRef}
-                        src="https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/logo.webp"
+                        src="/images/logo.webp"
                         alt="Instituto Sobre'Viver Logo"
                         fetchPriority="high"
                         loading="eager"

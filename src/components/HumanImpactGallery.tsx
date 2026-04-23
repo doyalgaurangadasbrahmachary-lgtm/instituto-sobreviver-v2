@@ -9,7 +9,7 @@ import { Heart, ChevronLeft, ChevronRight, X } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
-const CDN_BASE = 'https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/';
+const CDN_BASE = '/images/';
 
 // Ahora generamos un array matemático para las 22 fotos, aligerando el código
 const imagesList = Array.from({ length: 22 }, (_, i) => `galeria${i + 1}.webp`);

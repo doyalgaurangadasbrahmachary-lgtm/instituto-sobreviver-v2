@@ -12,19 +12,19 @@ const programs = [
         id: 1,
         title: 'Resgate contra o Abandono',
         description: 'Minas Gerais possui apenas 71 leitos paliativos formais para 21 milhões de pessoas. O Instituto resgatou mais de 370 vidas do isolamento e do descaso em apenas dois anos. Sua doação garante a dignidade onde o sistema público falha sistematicamente.',
-        image: 'https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/tarjeta-1.webp',
+        image: '/images/tarjeta-1.webp',
     },
     {
         id: 2,
         title: 'Escudo contra a Burocracia',
         description: 'A burocracia estatal bloqueia o acesso a remédios vitais para quem não pode esperar. Facilitamos o bloqueio judicial de R$ 384.000 para garantir tratamentos de alto custo que salvam pacientes do sofrimento. Seja a justiça que chega antes do esquecimento.',
-        image: 'https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/tarjeta-2.webp',
+        image: '/images/tarjeta-2.webp',
     },
     {
         id: 3,
         title: 'Aliança pela Dignidade',
         description: 'Geramos R$ 145.000 em impacto social direto com serviços que o Estado não provê em domicílio. O cuidado é uma responsabilidade compartilhada pela sociedade através de alianças compassivas. Doe para sustentar esta resistência pela vida.',
-        image: 'https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/tarjeta-3.webp',
+        image: '/images/tarjeta-3.webp',
     },
 ];
 

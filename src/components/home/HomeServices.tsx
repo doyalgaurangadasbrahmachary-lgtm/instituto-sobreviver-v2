@@ -5,19 +5,19 @@ const services = [
     {
         title: "Terapias integrativas",
         description: "Ozonioterapia, Acupuntura, Auriculoterapia, Reiki e Massoterapia para alívio da dor e bem-estar.",
-        image: "https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/tarjeta1.webp",
+        image: "/images/tarjeta1.webp",
         className: "object-center"
     },
     {
         title: "Suporte profissional",
         description: "Equipe multidisciplinar com Psicologia e Suporte Jurídico para garantir direitos e saúde mental.",
-        image: "https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/tarjeta2.webp",
+        image: "/images/tarjeta2.webp",
         className: "object-center"
     },
     {
         title: "Atividades & inclusão",
         description: "Aulas de Artes e eventos comunitários (Bazar, Feijuca) para integração social e angariação de fundos.",
-        image: "https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/tarjeta3.webp",
+        image: "/images/tarjeta3.webp",
         className: "object-center"
     }
 ];

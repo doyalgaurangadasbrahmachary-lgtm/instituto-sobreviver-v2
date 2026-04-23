@@ -24,7 +24,7 @@ export default function HomeFooter() {
                         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                     >
                         <img
-                            src="https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/rostro-logo.webp"
+                            src="/images/rostro-logo.webp"
                             alt="Instituto Sobre'Viver"
                             className="w-full h-full object-contain"
                             loading="lazy"

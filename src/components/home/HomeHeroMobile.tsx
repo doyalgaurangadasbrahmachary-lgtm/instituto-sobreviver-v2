@@ -74,7 +74,7 @@ export default function HomeHeroMobile() {
                 {/* LOGO (Aparece justo encima del lugar final del texto, Ajustado a la Cúpula 12%) */}
                 <div ref={logoRef} className="absolute left-1/2 -translate-x-1/2 w-[280px] h-auto flex flex-col justify-center items-center drop-shadow-2xl opacity-0" style={{ top: '12%' }}>
                     <img
-                        src="https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/logo.webp"
+                        src="/images/logo.webp"
                         alt="Instituto Sobre'Viver Logo"
                         className="w-full h-auto object-contain pointer-events-auto"
                         draggable={false}
@@ -119,8 +119,8 @@ export default function HomeHeroMobile() {
                  w-0 h-0 overflow-hidden → zero layout impact, zero SEO footprint.
                  eager + fetchPriority=high → browser fetches immediately. */}
             <div className="absolute w-0 h-0 overflow-hidden opacity-0 pointer-events-none" aria-hidden="true">
-                <img src="https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/fondo-tarjeta.webp" alt="" loading="eager" fetchPriority="high" decoding="async" width={1} height={1} />
-                <img src="https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/lau.webp" alt="" loading="eager" fetchPriority="high" decoding="async" width={1} height={1} />
+                <img src="/images/fondo-tarjeta.webp" alt="" loading="eager" fetchPriority="high" decoding="async" width={1} height={1} />
+                <img src="/images/lau.webp" alt="" loading="eager" fetchPriority="high" decoding="async" width={1} height={1} />
             </div>
         </section>
     );

@@ -134,7 +134,7 @@ export default function HomeHeroDesktop() {
                     className="absolute top-1/2 left-[50.5%] md:left-[60.5%] w-auto h-auto flex justify-center items-center cursor-pointer z-50"
                 >
                     <img
-                        src="https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/logo.webp"
+                        src="/images/logo.webp"
                         alt="Instituto Sobre'Viver Logo"
                         className="w-[236px] md:w-[422px] h-auto object-contain drop-shadow-2xl"
                         draggable={false}
@@ -149,8 +149,8 @@ export default function HomeHeroDesktop() {
             </div>
             {/* ── Invisible preload: caches modal assets on Hero mount ── */}
             <div className="absolute w-0 h-0 overflow-hidden opacity-0 pointer-events-none" aria-hidden="true">
-                <img src="https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/fondo-tarjeta.webp" alt="" loading="eager" fetchPriority="high" decoding="async" width={1} height={1} />
-                <img src="https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/lau.webp" alt="" loading="eager" fetchPriority="high" decoding="async" width={1} height={1} />
+                <img src="/images/fondo-tarjeta.webp" alt="" loading="eager" fetchPriority="high" decoding="async" width={1} height={1} />
+                <img src="/images/lau.webp" alt="" loading="eager" fetchPriority="high" decoding="async" width={1} height={1} />
             </div>
         </section >
     );

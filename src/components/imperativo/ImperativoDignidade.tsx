@@ -97,7 +97,7 @@ const ImperativoDignidade: React.FC<ImperativoDignidadeProps> = ({ onBack }) => 
               </div>
               <div className="lg:col-span-7 h-full">
                 <img
-                  src="https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/panorama-de-divinopolis.webp"
+                  src="/images/panorama-de-divinopolis.webp"
                   alt="Panorama de Divinópolis"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -158,7 +158,7 @@ const ImperativoDignidade: React.FC<ImperativoDignidadeProps> = ({ onBack }) => 
               </div>
               <div className="lg:col-span-5 sticky top-32">
                 <img
-                  src="https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/ambientes-hospitalares-pyb.webp"
+                  src="/images/ambientes-hospitalares-pyb.webp"
                   alt="Ambientes Hospitalares"
                   className="aspect-[4/5] w-full object-cover rounded-2xl border border-white/10 opacity-60 mix-blend-overlay"
                   loading="lazy"
@@ -218,7 +218,7 @@ const ImperativoDignidade: React.FC<ImperativoDignidadeProps> = ({ onBack }) => 
                 <p className="drop-cap">{CONTENT.realities_section.p1}</p>
                 <div className="sticky top-32">
                   <img
-                    src="https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/cuidados-domiciliares.webp"
+                    src="/images/cuidados-domiciliares.webp"
                     alt="Cuidados Domiciliares"
                     className="aspect-video w-full object-cover border border-gray-100 rounded-2xl shadow-md"
                     loading="lazy"
@@ -256,7 +256,7 @@ const ImperativoDignidade: React.FC<ImperativoDignidadeProps> = ({ onBack }) => 
 
             <div className="aspect-[21/10] bg-[#F9F7F2] mb-32 rounded-[4rem] border border-gray-100 overflow-hidden flex items-center justify-center italic text-gray-300 uppercase text-[10px] tracking-[0.5em]">
               <motion.img
-                src="https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/laura.webp"
+                src="/images/laura.webp"
                 alt="Laura Vitória"
                 className="w-full h-full object-cover"
                 whileHover={{ scale: 1.05 }}
@@ -371,7 +371,7 @@ const ImperativoDignidade: React.FC<ImperativoDignidadeProps> = ({ onBack }) => 
               {/* COLUMNA DERECHA: IMAGEN */}
               <div className="lg:col-span-6 h-full min-h-[500px] lg:min-h-[700px] overflow-hidden rounded-xl shadow-xl">
                 <motion.img
-                  src="https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/mayara.webp"
+                  src="/images/mayara.webp"
                   alt="Mayara sorrindo - Comunidade Paliativista"
                   className="w-full h-full object-cover"
                   whileHover={{ scale: 1.05 }}
@@ -483,7 +483,7 @@ const ImperativoDignidade: React.FC<ImperativoDignidadeProps> = ({ onBack }) => 
                 </div>
                 <div className="aspect-[3/4] bg-white/5 rounded-[2rem] flex items-center justify-center overflow-hidden">
                   <img
-                    src="https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/final.webp"
+                    src="/images/final.webp"
                     alt="O Legado do Cuidado"
                     className="w-full h-full object-cover opacity-80 hover:scale-105 transition-transform duration-700"
                   />

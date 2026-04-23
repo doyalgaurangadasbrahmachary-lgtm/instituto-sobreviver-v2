@@ -64,7 +64,7 @@ export default function HomeQuemSomosModal({ isOpen, onClose }: HomeQuemSomosMod
                             {/* LAYER 1: Background Wall Image */}
                             <div className="absolute top-0 left-0 w-full h-[65%] z-0">
                                 <img
-                                    src="https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/fondo-tarjeta.webp"
+                                    src="/images/fondo-tarjeta.webp"
                                     alt="Muro del Instituto"
                                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
                                     style={{ objectPosition: '75% 50%' }}
@@ -135,7 +135,7 @@ export default function HomeQuemSomosModal({ isOpen, onClose }: HomeQuemSomosMod
                             {/* LAYER 4: Illustration */}
                             <div className="absolute bottom-[-10px] right-[-45px] w-[250px] h-[600px] z-[60] pointer-events-none filter drop-shadow-2xl">
                                 <img
-                                    src="https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/lau.webp"
+                                    src="/images/lau.webp"
                                     alt="Ilustração Laura e Valquíria"
                                     className="absolute inset-0 w-full h-full object-contain object-bottom"
                                     loading="eager"

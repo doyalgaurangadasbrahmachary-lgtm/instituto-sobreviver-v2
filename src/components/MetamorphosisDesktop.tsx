@@ -18,7 +18,7 @@ import DonationButton from './ui/DonationButton';
 // ─── Content data ─────────────────────────────────────────────────────────────
 const BLOCKS = [
     {
-        src: 'https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/sec-1-bn.webp',
+        src: '/images/sec-1-bn.webp',
         alt: 'Física — realidade',
         title: 'Física',
         titleColor: 'text-white/40',
@@ -27,7 +27,7 @@ const BLOCKS = [
         isHope: false,
     },
     {
-        src: 'https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/sec-1-color.webp',
+        src: '/images/sec-1-color.webp',
         alt: 'Física — esperança',
         title: 'Física',
         titleColor: 'text-brand-cyan',
@@ -36,7 +36,7 @@ const BLOCKS = [
         isHope: true,
     },
     {
-        src: 'https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/sec-2-bn.webp',
+        src: '/images/sec-2-bn.webp',
         alt: 'Social — realidade',
         title: 'Social',
         titleColor: 'text-white/40',
@@ -45,7 +45,7 @@ const BLOCKS = [
         isHope: false,
     },
     {
-        src: 'https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/cambiarescena.webp',
+        src: '/images/cambiarescena.webp',
         alt: 'Social — esperança',
         title: 'Social',
         titleColor: 'text-brand-cyan',
@@ -54,7 +54,7 @@ const BLOCKS = [
         isHope: true,
     },
     {
-        src: 'https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/sec-3-bn.webp',
+        src: '/images/sec-3-bn.webp',
         alt: 'Jurídica — realidade',
         title: 'Jurídica',
         titleColor: 'text-white/40',
@@ -63,7 +63,7 @@ const BLOCKS = [
         isHope: false,
     },
     {
-        src: 'https://sugsprkykcqrpabuvbnu.supabase.co/storage/v1/object/public/instituto-sobreviver-assets/sec-3-color.webp',
+        src: '/images/sec-3-color.webp',
         alt: 'Jurídica — esperança',
         title: 'Jurídica',
         titleColor: 'text-brand-cyan',
