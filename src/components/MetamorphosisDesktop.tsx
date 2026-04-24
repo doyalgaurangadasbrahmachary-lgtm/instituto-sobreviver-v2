@@ -89,7 +89,7 @@ const TitleSplit = ({ text, baseColor }: { text: string; baseColor: string }) =>
 };
 
 // ─── ImageBlock ───────────────────────────────────────────────────────────────
-// Static, agile scroll block (150vh). No zoom. Stable text.
+// Agile scroll block (150vh). Zoom-in effect synchronized with scroll.
 const ImageBlock = ({
     block,
     isFirst,
@@ -98,16 +98,25 @@ const ImageBlock = ({
     isFirst?: boolean;
 }) => {
     const { openReport } = useView();
+    const blockRef = useRef<HTMLDivElement>(null);
+
+    const { scrollYProgress } = useScroll({
+        target: blockRef,
+        offset: ['start start', 'end start']
+    });
+
+    const scale = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
 
     return (
-        <div className="relative h-[150vh]">
+        <div ref={blockRef} className="relative h-[150vh]">
             <div className="sticky top-0 h-screen overflow-hidden">
 
-                {/* ── 100% Static Image ─────────────────────────────────────────── */}
-                <img
+                {/* ── Motion Image with Zoom ─────────────────────────────────────────── */}
+                <motion.img
+                    style={{ scale }}
                     src={block.src}
                     alt={block.alt}
-                    className="absolute inset-0 w-full h-full object-cover object-center"
+                    className="absolute inset-0 w-full h-full object-cover object-center origin-center"
                     loading={isFirst ? 'eager' : 'lazy'}
                     decoding="async"
                     fetchPriority={isFirst ? 'high' : 'auto'}

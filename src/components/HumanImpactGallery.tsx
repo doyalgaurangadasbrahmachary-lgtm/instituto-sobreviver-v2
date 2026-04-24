@@ -77,24 +77,25 @@ const HumanImpactGallery: React.FC = () => {
             return a.getBoundingClientRect().top - b.getBoundingClientRect().top;
         });
 
-        // 2. Animación Cascada GSAP 
-        gsap.fromTo(
-            elements, // Pasamos el array matemáticamente ordenado
-            { y: 40, opacity: 0, scale: 0.95 },
-            {
-                y: 0,
-                opacity: 1,
-                scale: 1,
-                duration: 1.2,
-                stagger: 0.15, // Cascada fluida
-                ease: 'expo.out',
-                scrollTrigger: {
-                    trigger: containerRef.current,
-                    start: 'top 95%', // 3. Early Trigger: Arranca ligeramente antes de verse
-                    toggleActions: 'play none none reverse',
-                },
+        // 2. Estado inicial oculto
+        gsap.set(elements, { y: 40, opacity: 0, scale: 0.95 });
+
+        // 3. Animación progresiva (Batch) para mejor rendimiento móvil
+        ScrollTrigger.batch(elements, {
+            start: 'top 95%',
+            once: true, // Reproduce una sola vez, evita que desaparezcan al subir
+            onEnter: (batch) => {
+                gsap.to(batch, {
+                    y: 0,
+                    opacity: 1,
+                    scale: 1,
+                    duration: 1.2,
+                    stagger: 0.15,
+                    ease: 'expo.out',
+                    overwrite: true
+                });
             }
-        );
+        });
     }, { scope: containerRef });
 
     const selectedImage = galleryImages.find(img => img.id === selectedId);
